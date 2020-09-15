@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>me.akainth.context-theme</id>
+    <name>Context Theme</name>
+    <vendor email="aanand@akainth.me" url="https://akainth.me">Aanand Kainth</vendor>
+
+    <description><![CDATA[
+    Context Theme automatically updates the IDE's theme to match your operating system's configured light or dark mode.
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <ApplicationLoadListener implementation="me.akainth.ApplicationOpenListener"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
