@@ -12,7 +12,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <ApplicationLoadListener implementation="me.akainth.ApplicationOpenListener"/>
+        <applicationInitializedListener implementation="me.akainth.ApplicationOpenListener"/>
     </extensions>
 
     <actions>
